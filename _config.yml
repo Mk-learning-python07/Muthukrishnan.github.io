@@ -1,0 +1,87 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Site settings
+title: Muthukrishnan's Website
+description: Welcome to Muthu's personal website. Learn more about my professional journey, blog posts, and more.
+author:
+  name: Muthukrishnan Anand
+  email: muthu.krishnan1@hotmail.com
+url: "https://Muthukrishnan.github.io" # Your website URL
+theme: minimal-mistakes-jekyll
+
+# Build settings
+markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes" # Using the Minimal Mistakes theme
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-feed
+
+# Minimal Mistakes Configuration
+minimal_mistakes:
+  logo: "assets/images/Logo_CoPilot_Created.jpeg" # Path to your logo image
+  # Social media links
+  social:
+    github: Mk-learning-python07
+    # Uncomment and add your own social media links if needed
+    # twitter: johndoe
+    # linkedin: johndoe
+    # facebook: johndoe
+
+# Logo and header
+header: "Website Logo"
+logo: "assets/images/Logo_CoPilot_Created.jpeg"
+
+# Pagination
+paginate: 5
+paginate_path: "/page:num/"
+
+# SEO settings
+seo:
+  title: "Muthukrishnan's Website"
+  description: "Welcome to Muthu's personal website. Learn more about my professional journey, blog posts, and more."
+
+# Navigation Links
+header_pages:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Portfolio
+    url: /portfolio/
+  - title: Blog
+    url: /blog/
+  - title: Contact
+    url: /contact/
+
+# Permalinks
+permalink: pretty
+
+# Custom settings
+# You can add any other custom settings or variables here
+
+# Exclude files
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
